@@ -20,25 +20,29 @@
 
         <section class="login">
             <div class="intro">
-                <h1>Welcom Back &#128075;</h1><br>
+                <h1 id="login-status">Welcom Back &#128075;</h1><br>
                 <p>Today is a new day. It's your day. You shape it. Sign in to start managing yout project</p><br>
             </div>
-            <form action="login">
+
+            <div id="login-form">
                 <label for="email">Email</label><br>
-                <input type="email" placeholder="Example@email.com">
+                <input type="email" id="email" placeholder="Example@email.com">
                 <br>
                 <label for="password">Password</label><br>
-                <input type="password" placeholder="At least 8 characters">
+                <input type="password" id="password" placeholder="At least 8 characters">
                 <p class="forgotPass"><a href="#">Forgot password ?</a></p>
-                <button>Sign in</button>
                 <p>Don't you have an account ? <a href="#">Sign up</a></p>
+                <button onclick="signIn()">Sign In</button>
                 <footer>
                     <p>&copy; 2023 ALL RIGHT RESERVED</p>
                 </footer>
-            </form>
+            </div>
+
+
         </section>
     </main>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

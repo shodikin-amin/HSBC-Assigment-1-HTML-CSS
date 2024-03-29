@@ -38,8 +38,8 @@
     font-size: large;
 }
 
-.login form input,
-.login form button {
+.login #login-form input,
+.login #login-form button {
     width: 388px;
     padding: 10px;
     margin-bottom: 30px;
@@ -48,17 +48,17 @@
     font-size: small;
 }
 
-.login form input {
+.login #login-form input {
     background-color: #F7FBFF;
 }
 
-.login form button {
+.login #login-form button {
     background-color: #162D3A;
     color: #F7FBFF;
     padding: 16px;
 }
 
-.login form button:hover {
+.login #login-form button:hover {
     background-color: #F7FBFF;
     color: #162D3A;
     padding: 16px;
@@ -70,7 +70,7 @@
     padding-bottom: 30px;
 }
 
-.login form p {
+.login #login-form p {
     text-align: center;
 }
 
@@ -86,13 +86,13 @@ footer {
     }
 
     .art {
-        width: 380px;
+        width: 100px;
         height: 180px;
         border-radius: 30px;
     }
 
     .login {
-        min-width: 380px;
+        min-width: 100px;
         margin: 10px;
 
         font-size: small;
@@ -103,4 +103,8 @@ footer {
         font-size: medium;
     }
 
+    .login #login-form input,
+    .login #login-form button {
+        width: 300px;
+    }
 }
